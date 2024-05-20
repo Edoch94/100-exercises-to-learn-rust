@@ -1,3 +1,6 @@
 [workspace]
 members = ["exercises/*/*", "helpers/common", "helpers/ticket_fields"]
 resolver = "2"
+
+[profile.release]
+overflow-checks = true     # Disable integer overflow checks.
